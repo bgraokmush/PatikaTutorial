@@ -8,12 +8,16 @@ Java ile gidilen mesafeye (KM) göre taksimetre tutarını ekrana yazdıran prog
     Taksimetre açılış ücreti 10 TL'dir.
 */
 
+import java.util.Scanner;
+
 public class Odev05 {
     public static void main(String[] args) {
-        double km = 10;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Mesafeyi girin-> ");
+        double km = scanner.nextDouble();
         double perKm = 2.20;
         double total = 10 + (km * perKm);
         total = (total < 20) ? 20 : total;
-        System.out.println("Total: " + total);
+        System.out.println("Total-> " + total);
     }
 }

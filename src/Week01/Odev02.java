@@ -6,21 +6,7 @@ import java.util.Scanner;
  * ortalamalarını hesaplayıp ekrana bastırılan programı yazın.
  * */
 
-class Ders{
-    int vizeNot;
-    int finalNot;
-    String dersAd;
 
-    public Ders( String dersAd, int vizeNot, int finalNot) {
-        this.vizeNot = vizeNot;
-        this.finalNot = finalNot;
-        this.dersAd = dersAd;
-    }
-
-    public double ortalama(){
-        return 0.4*vizeNot + 0.6*finalNot;
-    }
-}
 
 public class Odev02 {
 

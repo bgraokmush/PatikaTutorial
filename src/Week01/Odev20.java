@@ -12,7 +12,9 @@ public class Odev20 {
         int sayi = scanner.nextInt();
         System.out.println("Sonuç->" + sayi + " sayısının\n4'ün kuvvetleri: " + kuvvet(sayi, 4) + "\n5'in Kuvvetleri: " + kuvvet(sayi, 5));
 
-        System.out.println("\nFactorial hesaplama: " + faktoriyel(sayi));
+        System.out.println("Sayi giriniz: ");
+        int sayi2 = scanner.nextInt();
+        System.out.println("\nKombinasyon Hesaplama: " + kombinasyon(sayi, sayi2));
     }
 
     public static String kuvvet(int sayi, int kat){
@@ -30,5 +32,10 @@ public class Odev20 {
             sonuc *= i;
         }
         return sonuc;
+    }
+
+    //Kombinasyon hesaplama
+    public static int kombinasyon(int n, int r){
+        return faktoriyel(n) / (faktoriyel(r) * faktoriyel(n-r));
     }
 }

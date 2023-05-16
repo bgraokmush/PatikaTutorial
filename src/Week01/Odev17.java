@@ -20,5 +20,4 @@ public class Odev17 {
         }
         System.out.println("Toplam -> " + toplam);
     }
-
 }

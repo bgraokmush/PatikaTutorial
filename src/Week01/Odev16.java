@@ -18,8 +18,9 @@ public class Odev16 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Yıl Giriniz: ");
         int yil = scanner.nextInt();
-        if(yil < 0)
+        if(yil < 0){
             System.out.println("Hatalı Veri Girdiniz !");
+        }
         else
             System.out.println(yil + " Yılı " + (isLeapYear(yil) ? "Artık Yıldır !" : "Artık Yıl Değildir !"));
     }

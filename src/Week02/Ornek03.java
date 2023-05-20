@@ -2,7 +2,7 @@ package Week02;
 
 import java.util.Scanner;
 
-public class Odev03 {
+public class Ornek03 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

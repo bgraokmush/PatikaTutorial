@@ -22,4 +22,5 @@ public class Odev30 {
             b = c;
         }
     }
+
 }
